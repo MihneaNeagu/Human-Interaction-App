@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Operations App - Impartire</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Impartire</h2>
+        <form class="form" id="form4">
+            <!-- Add content from the original code -->
+            <h4 class="score" id="score4">Score: 0</h4>
+            <h1 id="question4">Cat e 1 impartit cu 1?</h1>
+            <input type="text" class="input" id="input4" placeholder="Scrie raspunsul" autofocus autocomplete="off">
+            <button type="submit" class="btn">Trimite</button>
+        </form>
+        </form>
+        <button type="button" class="reset-btn" onclick="resetScore('score4')">Reseteaza Scorul</button>
+        <button type="button" class="menu-btn" onclick="redirectToMenu()">Back to Menu</button>
+        <script src="divide.js"></script>
+    </div>
+
+    <script>
+        function resetScore(scoreName) {
+            localStorage.removeItem(scoreName);
+            location.reload();
+        }
+
+        function redirectToMenu() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
