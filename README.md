@@ -1,3 +1,3 @@
-# multiplicationApp
+# calculator app
 
-Live Demo: https://aa-multiplication-app.netlify.app/
+Live Demo: https://ostrich-large-only.ngrok-free.app/calculatorApp/
